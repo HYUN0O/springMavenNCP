@@ -1,6 +1,5 @@
-
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +23,7 @@ th, td {
 <form id="uploadForm">
 	<table border="1">
 		<tr>
-			<th>»óÇ°¸í</th>
+			<th>ìƒí’ˆëª…</th>
 			<td>
 				<input type="text" name="imageName" id="imageName" size="35">
 				<div id="imageNameDiv"></div>
@@ -42,15 +41,15 @@ th, td {
 			<td colspan="2">
 				<span id="showImgList"></span>
 				
-				<img id="camera" src="../image/camera.jpg" width="30" height="30" alt="Ä«¸Ş¶ó">
+				<img id="camera" src="../image/camera.jpg" width="30" height="30" alt="ì¹´ë©”ë¼">
 				<input type="file" name="img[]" id="img" multiple="multiple" style="visibility: hidden;">
 			</td>
 		</tr>
 		
 		<tr>
 			<td colspan="2" align="center">
-				<input type="button" value="ÀÌ¹ÌÁö ¾÷·Îµå" id="uploadBtn">
-				<input type="reset" value="Ãë¼Ò">
+				<input type="button" value="ì´ë¯¸ì§€ ì—…ë¡œë“œ" id="uploadBtn">
+				<input type="reset" value="ì·¨ì†Œ">
 			</td>
 		</tr>
 	</table>
@@ -62,10 +61,10 @@ th, td {
 <script type="text/javascript" src="../js/upload.js"></script>
 <script type="text/javascript">
 $('#camera').click(function(){
-	$('#img').trigger('click');//°­Á¦ ÀÌº¥Æ® ¹ß»ı
+	$('#img').trigger('click');//ê°•ì œ ì´ë²¤íŠ¸ ë°œìƒ
 });
 
-/* ¿©·¯ °³ÀÇ ÀÌ¹ÌÁö ¹Ì¸®º¸±â */
+/* ì—¬ëŸ¬ ê°œì˜ ì´ë¯¸ì§€ ë¯¸ë¦¬ë³´ê¸° */
  $('#img').change(function(){
 	 $('#showImgList').empty();
 	 for(i = 0; i < this.files.length; i++){
@@ -73,7 +72,7 @@ $('#camera').click(function(){
 	 }
  });
  
-/* ¿©·¯°³ÀÇ ÀÌ¹ÌÁö ¹Ì¸®º¸±â */
+/* ì—¬ëŸ¬ê°œì˜ ì´ë¯¸ì§€ ë¯¸ë¦¬ë³´ê¸° */
 function readURL(file) {
 	var reader = new FileReader();
 	

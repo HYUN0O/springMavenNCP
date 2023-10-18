@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,12 +22,12 @@ th, td {
 <body>
 <table id="imageListTable" border="1" frame="hsides" rules="rows">
 	<tr>
-		<th width="100">ΉψΘ£</th>
-		<th width="100">ΐΜΉΜΑφ</th>
-		<th width="100">»σΗ°Έν</th>
+		<th width="100">λ²νΈ</th>
+		<th width="100">μ΄λ―Έμ§€</th>
+		<th width="100">μƒν’λª…</th>
 	</tr>
 	
-	<!-- µΏΐϋΓ³Έ® -->
+	<!-- λ™μ μ²λ¦¬ -->
 </table>
 
 <script src="http://code.jquery.com/jquery-3.7.0.min.js"></script>
